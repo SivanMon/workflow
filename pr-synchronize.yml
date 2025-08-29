@@ -1,0 +1,11 @@
+name: PR Sync
+
+on:
+  pull_request:
+    types: [synchronize]
+
+jobs:
+  pr-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🔄 Pull Request synchronized (new commits)!"

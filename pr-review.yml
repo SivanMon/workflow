@@ -1,0 +1,11 @@
+name: PR Review Submitted
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  review-submitted:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "📝 Pull Request review submitted!"

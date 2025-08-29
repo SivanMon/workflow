@@ -1,0 +1,12 @@
+name: Push to Feature Branch
+
+on:
+  push:
+    branches:
+      - 'feature-*'
+
+jobs:
+  say-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚀 Push to feature branch triggered!"
